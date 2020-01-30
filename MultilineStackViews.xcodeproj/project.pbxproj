@@ -13,6 +13,9 @@
 		BC974FD823E1DC7B006E925C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC974FD623E1DC7B006E925C /* Main.storyboard */; };
 		BC974FDA23E1DC7C006E925C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC974FD923E1DC7C006E925C /* Assets.xcassets */; };
 		BC974FDD23E1DC7C006E925C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC974FDB23E1DC7C006E925C /* LaunchScreen.storyboard */; };
+		BC974FE923E1E03A006E925C /* CRGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC974FE823E1E03A006E925C /* CRGridView.swift */; };
+		BCC47EB023E1F90B009A6EB9 /* CRTrajectStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC47EAF23E1F90B009A6EB9 /* CRTrajectStepView.swift */; };
+		BCC47EB223E1F916009A6EB9 /* CRTrajectStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC47EB123E1F916009A6EB9 /* CRTrajectStepView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		BC974FD923E1DC7C006E925C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC974FDC23E1DC7C006E925C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC974FDE23E1DC7C006E925C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC974FE823E1E03A006E925C /* CRGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRGridView.swift; sourceTree = "<group>"; };
+		BCC47EAF23E1F90B009A6EB9 /* CRTrajectStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRTrajectStepView.swift; sourceTree = "<group>"; };
+		BCC47EB123E1F916009A6EB9 /* CRTrajectStepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRTrajectStepView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,48 @@
 			children = (
 				BC974FD023E1DC7B006E925C /* AppDelegate.swift */,
 				BC974FD223E1DC7B006E925C /* SceneDelegate.swift */,
-				BC974FD423E1DC7B006E925C /* ViewController.swift */,
-				BC974FD623E1DC7B006E925C /* Main.storyboard */,
+				BC974FE523E1E010006E925C /* Views */,
+				BC974FE423E1E007006E925C /* View Controllers */,
+				BC974FE623E1E018006E925C /* Supporting Files */,
 				BC974FD923E1DC7C006E925C /* Assets.xcassets */,
 				BC974FDB23E1DC7C006E925C /* LaunchScreen.storyboard */,
 				BC974FDE23E1DC7C006E925C /* Info.plist */,
 			);
 			path = MultilineStackViews;
+			sourceTree = "<group>";
+		};
+		BC974FE423E1E007006E925C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC974FD423E1DC7B006E925C /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BC974FE523E1E010006E925C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC974FE823E1E03A006E925C /* CRGridView.swift */,
+				BCC47EB123E1F916009A6EB9 /* CRTrajectStepView.xib */,
+				BCC47EAF23E1F90B009A6EB9 /* CRTrajectStepView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC974FE623E1E018006E925C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC974FE723E1E022006E925C /* Storyboards */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC974FE723E1E022006E925C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BC974FD623E1DC7B006E925C /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +169,7 @@
 				BC974FDD23E1DC7C006E925C /* LaunchScreen.storyboard in Resources */,
 				BC974FDA23E1DC7C006E925C /* Assets.xcassets in Resources */,
 				BC974FD823E1DC7B006E925C /* Main.storyboard in Resources */,
+				BCC47EB223E1F916009A6EB9 /* CRTrajectStepView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC974FD523E1DC7B006E925C /* ViewController.swift in Sources */,
+				BC974FE923E1E03A006E925C /* CRGridView.swift in Sources */,
 				BC974FD123E1DC7B006E925C /* AppDelegate.swift in Sources */,
+				BCC47EB023E1F90B009A6EB9 /* CRTrajectStepView.swift in Sources */,
 				BC974FD323E1DC7B006E925C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
