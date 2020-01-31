@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2838B76123E4840E00419A42 /* TrajectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838B76023E4840E00419A42 /* TrajectListViewController.swift */; };
+		2838B76323E4849D00419A42 /* CRTrajectStepsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838B76223E4849D00419A42 /* CRTrajectStepsTableViewCell.swift */; };
+		2838B76623E4855B00419A42 /* TrajectStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838B76523E4855B00419A42 /* TrajectStep.swift */; };
 		BC974FD123E1DC7B006E925C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC974FD023E1DC7B006E925C /* AppDelegate.swift */; };
 		BC974FD323E1DC7B006E925C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC974FD223E1DC7B006E925C /* SceneDelegate.swift */; };
 		BC974FD523E1DC7B006E925C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC974FD423E1DC7B006E925C /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2838B76023E4840E00419A42 /* TrajectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajectListViewController.swift; sourceTree = "<group>"; };
+		2838B76223E4849D00419A42 /* CRTrajectStepsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRTrajectStepsTableViewCell.swift; sourceTree = "<group>"; };
+		2838B76523E4855B00419A42 /* TrajectStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajectStep.swift; sourceTree = "<group>"; };
 		BC974FCD23E1DC7B006E925C /* MultilineStackViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultilineStackViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC974FD023E1DC7B006E925C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC974FD223E1DC7B006E925C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2838B75F23E4838700419A42 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				BCC47EB123E1F916009A6EB9 /* CRTrajectStepView.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		2838B76423E4854F00419A42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2838B76523E4855B00419A42 /* TrajectStep.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BC974FC423E1DC7B006E925C = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +86,7 @@
 			children = (
 				BC974FD023E1DC7B006E925C /* AppDelegate.swift */,
 				BC974FD223E1DC7B006E925C /* SceneDelegate.swift */,
+				2838B76423E4854F00419A42 /* Models */,
 				BC974FE523E1E010006E925C /* Views */,
 				BC974FE423E1E007006E925C /* View Controllers */,
 				BC974FE623E1E018006E925C /* Supporting Files */,
@@ -78,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				BC974FD423E1DC7B006E925C /* ViewController.swift */,
+				2838B76023E4840E00419A42 /* TrajectListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -86,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				BC974FE823E1E03A006E925C /* CRGridView.swift */,
-				BCC47EB123E1F916009A6EB9 /* CRTrajectStepView.xib */,
 				BCC47EAF23E1F90B009A6EB9 /* CRTrajectStepView.swift */,
+				2838B76223E4849D00419A42 /* CRTrajectStepsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +119,7 @@
 		BC974FE623E1E018006E925C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2838B75F23E4838700419A42 /* XIBs */,
 				BC974FE723E1E022006E925C /* Storyboards */,
 			);
 			path = "Supporting Files";
@@ -180,10 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2838B76323E4849D00419A42 /* CRTrajectStepsTableViewCell.swift in Sources */,
 				BC974FD523E1DC7B006E925C /* ViewController.swift in Sources */,
 				BC974FE923E1E03A006E925C /* CRGridView.swift in Sources */,
 				BC974FD123E1DC7B006E925C /* AppDelegate.swift in Sources */,
 				BCC47EB023E1F90B009A6EB9 /* CRTrajectStepView.swift in Sources */,
+				2838B76623E4855B00419A42 /* TrajectStep.swift in Sources */,
+				2838B76123E4840E00419A42 /* TrajectListViewController.swift in Sources */,
 				BC974FD323E1DC7B006E925C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
